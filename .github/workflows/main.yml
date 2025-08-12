@@ -47,7 +47,7 @@ jobs:
 #          docutils: "0.20"
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         persist-credentials: false
     - name: Mount the test roots as read-only
@@ -94,7 +94,7 @@ jobs:
         - "0.21"
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         persist-credentials: false
     - name: Set up Python ${{ matrix.python }} (deadsnakes)
@@ -127,7 +127,7 @@ jobs:
         - "3.14"
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         persist-credentials: false
     - name: Set up Python ${{ matrix.python }} (deadsnakes)
@@ -162,7 +162,7 @@ jobs:
         echo "TMP=D:\\Tmp" >> $env:GITHUB_ENV
         echo "TEMP=D:\\Tmp" >> $env:GITHUB_ENV
 
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         persist-credentials: false
     - name: Set up Python
@@ -191,7 +191,7 @@ jobs:
     timeout-minutes: 15
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         persist-credentials: false
     - name: Set up Python
@@ -226,7 +226,7 @@ jobs:
         mkdir /tmp/epubcheck && cd /tmp/epubcheck
         wget --no-verbose https://github.com/w3c/epubcheck/releases/download/v${EPUBCHECK_VERSION}/epubcheck-${EPUBCHECK_VERSION}.zip
         unzip epubcheck-${EPUBCHECK_VERSION}.zip
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         persist-credentials: false
     - name: Set up Python
@@ -259,7 +259,7 @@ jobs:
     timeout-minutes: 15
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         persist-credentials: false
     - name: Set up Python
@@ -292,7 +292,7 @@ jobs:
       image: ghcr.io/sphinx-doc/sphinx-ci
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         persist-credentials: false
     - name: Set up Python
@@ -321,7 +321,7 @@ jobs:
     timeout-minutes: 15
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         persist-credentials: false
     - name: Set up Python
